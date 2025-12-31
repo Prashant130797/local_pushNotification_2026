@@ -36,6 +36,7 @@ import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:main_firebase_pushnotification/MVVM_FCM/fcm_backgroundHandler.dart';
 import 'package:main_firebase_pushnotification/MVVM_FCM/home_Screen.dart';
 import 'package:main_firebase_pushnotification/MVVM_FCM/local_notification_service.dart';
+import 'package:main_firebase_pushnotification/calendar_event.dart';
 import 'package:main_firebase_pushnotification/login_page.dart';
 
 Future<void> main() async {
@@ -60,7 +61,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       // home: HomeScreen(),
-      home: LoginPage(),
+      home: AttendanceCalendar(),
     );
   }
 }
